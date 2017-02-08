@@ -6,8 +6,11 @@ source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
+let userruntime=fnamemodify(expand("$MYVIMRC"), ":p:h")
 set nu
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+let &backupdir=userruntime.'/backup'
+let &directory=userruntime.'/backup'
 
 set diffexpr=MyDiff()
 function MyDiff()
