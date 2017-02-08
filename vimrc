@@ -7,6 +7,12 @@ source $VIMRUNTIME/mswin.vim
 behave mswin
 
 let userruntime=fnamemodify(expand("$MYVIMRC"), ":p:h")
+
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_frontmatter = 1
+
+set textwidth=120
+
 set nu
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 let &backupdir=userruntime.'/backup'
