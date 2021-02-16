@@ -17,6 +17,7 @@ set nu
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 let &backupdir=userruntime.'/backup'
 let &directory=userruntime.'/backup'
+let &undodir=userruntime.'/backup'
 
 set diffexpr=MyDiff()
 function MyDiff()
